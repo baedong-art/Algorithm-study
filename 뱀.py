@@ -44,8 +44,9 @@ def simulate():
                 q.append((nx,ny))
                 #과거에 들어가있던 꼬리 제거
                 px,py = q.pop(0)
+                data[px][py] = 0
 
-            #사과가 있다면 이동 후에 꼬리 그대로 구디
+            #사과가 있다면 이동 후에 꼬리 그대로 둔다
             if data[nx][ny] ==1:
                 data[nx][ny] = 2
                 q.append((nx,ny))
