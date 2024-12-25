@@ -7,7 +7,8 @@ INF = int(1e9)
 n, m = map(int, input().split())
 start = int(input())
 
-#각 노드에 연결되어 있는 노드에 대한 정보를 담는 리스트를 만들기
+#
+각 노드에 연결되어 있는 노드에 대한 정보를 담는 리스트를 만들기
 graph = [[] for i in range(n+1)]
 #최단 거리 테이블을 모두 무한으로 초기화
 distance = [INF] * (n+1)
